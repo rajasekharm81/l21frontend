@@ -1,0 +1,32 @@
+.aboutUsMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: radial-gradient(#aaaaaa, #8f8f8f);
+}
+.aboutUsHeading {
+  display: flex;
+  align-items: flex-start;
+  padding: 0vh 0px 5vh 0vw;
+  flex-direction: column;
+  margin-top: 10vh;
+  width: 100vw;
+  height: 30vh;
+  background-size: cover;
+  color: white;
+}
+.aboutUsImage {
+  height: 30vh;
+  width: 100vw;
+}
+.contentContianer {
+  background-color: black;
+  height: auto;
+  width: 100vw;
+  color: white;
+  padding: 2vh 10vw 3vw 3vw;
+}
+
+li {
+  list-style: circle;
+}

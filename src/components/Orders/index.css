@@ -1,0 +1,34 @@
+.OrdersContainer {
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #181818;
+}
+
+.tables {
+  margin-top: 5vh;
+  columns: white;
+  row-gap: auto;
+  color: white;
+  width: 80vw;
+  text-align: center;
+}
+
+th {
+  border: 2px solid white;
+}
+td {
+  border: 1px solid white;
+}
+
+.homeButton {
+  width: 100vw;
+  text-align: end;
+  padding-right: 3vw;
+}
+
+.homeButton:hover {
+  font-size: 2vw;
+}

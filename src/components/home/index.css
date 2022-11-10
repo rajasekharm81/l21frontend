@@ -1,0 +1,521 @@
+@media screen and (min-width: 800px) {
+  .root {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: auto;
+  }
+
+  .homeMainContiner {
+    background-color: black;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .rootDull {
+    background-color: black;
+    color: white;
+    text-align: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+
+  .backgroundVideo {
+    height: 80vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .content {
+    position: absolute;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    height: 60vh;
+    width: 100vw;
+  }
+
+  .section2Container {
+    display: flex;
+    width: 100vw;
+    background-size: cover;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 60vh;
+    margin-top: 10vh;
+  }
+
+  .sliderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    margin-bottom: 5vh;
+  }
+
+  .slider {
+    width: 93vw;
+    display: flex;
+    height: auto;
+  }
+
+  .categoryHeading {
+    text-align: left;
+    padding-left: 2vw;
+    font-size: 2vw;
+    background-color: black;
+  }
+
+  .sliderItem {
+    width: 30vw;
+    height: 25vw;
+    text-align: center;
+  }
+
+  .image {
+    height: 20vw;
+    width: 20vw;
+    transition: width, height 2ms;
+    margin-left: 1vw;
+    border-radius: 2vw;
+    border: none;
+    margin: 2vw;
+    box-shadow: 0px 0px 19px 2px #474747;
+  }
+
+  .image:hover {
+    /* height: 22vw; */
+    position: relative;
+    width: 22vw;
+    box-shadow: 0px 0px 9px 1px #ffffff;
+  }
+
+  .categoryHeading {
+    font-style: italic;
+  }
+
+  .paraContainer {
+    color: white;
+    width: auto;
+    margin-left: 2.2vw;
+  }
+  .paraContainer p {
+    position: relative;
+  }
+  .section3Container {
+    display: flex;
+    background-image: url("https://res.cloudinary.com/dcqzidejd/image/upload/v1666936680/automobilewebsite/c837a6_1de0dc08580146f1be58deaa669fa8d3_mv2_o2nspg.webp");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0px 0px 8px 1px black;
+  }
+  .section3Content {
+    width: 30vw;
+    margin-top: 20vh;
+    text-align: right;
+    margin-left: 5vw;
+  }
+  .section3Content h1 {
+    position: relative;
+    animation-direction: linear;
+    animation: myfirst 2s;
+    font-size: 2vw;
+  }
+
+  @keyframes myfirst {
+    0% {
+      opacity: 0;
+      left: -100px;
+      top: 0vh;
+    }
+    100% {
+      opacity: 1;
+      left: 0vw;
+      top: 0vh;
+    }
+  }
+
+  .section3Container p {
+    font-size: 1vw;
+  }
+  .bootButton {
+    background-color: #96303a !important;
+    color: #ffffff !important;
+    border: none !important;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1vw !important;
+  }
+
+  .bootButton:hover {
+    background-color: transparent !important;
+    color: white !important;
+    border: 1px solid white !important;
+  }
+  .section3part1 {
+    order: 0;
+  }
+  .section3part2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+  .root {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: auto;
+  }
+
+  .homeMainContiner {
+    background-color: black;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .rootDull {
+    background-color: black;
+    color: white;
+    text-align: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+
+  .backgroundVideo {
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .content {
+    position: absolute;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    height: 60vh;
+    width: 100vw;
+  }
+
+  .section2Container {
+    display: flex;
+    width: 100vw;
+    background-size: cover;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 20vh;
+    margin-top: 5vh;
+  }
+
+  .sliderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    margin-bottom: 6vh;
+  }
+
+  .slider {
+    width: 93vw;
+    display: flex;
+    height: auto;
+  }
+
+  .categoryHeading {
+    text-align: left;
+    padding-left: 2vw;
+    font-size: 2vw;
+    background-color: black;
+  }
+
+  .sliderItem {
+    width: 30vw;
+    height: 25vw;
+    text-align: center;
+  }
+
+  .image {
+    height: 20vw;
+    width: 20vw;
+    transition: width, height 2ms;
+    margin-left: 1vw;
+    border-radius: 2vw;
+    border: none;
+    margin: 2vw;
+    box-shadow: 0px 0px 19px 2px #474747;
+  }
+
+  .image:hover {
+    /* height: 22vw; */
+    position: relative;
+    width: 22vw;
+    box-shadow: 0px 0px 9px 1px #ffffff;
+  }
+
+  .categoryHeading {
+    font-style: italic;
+  }
+
+  .paraContainer {
+    color: white;
+    /* position: absolute; */
+    bottom: 0;
+    width: auto;
+    margin-left: 2.2vw;
+  }
+  .paraContainer p {
+    position: relative;
+    bottom: 0;
+    font-size: 3vw;
+  }
+  .section3Container {
+    display: flex;
+    justify-content: space-between;
+    /* background-image: url("https://res.cloudinary.com/dcqzidejd/image/upload/c_scale,w_793/v1666239838/automobilewebsite/car_background_t3mson.jpg"); */
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0px 0px 8px 1px black;
+  }
+  .section3Content {
+    display: flex;
+    width: 40vw;
+    margin-top: 10vh;
+    text-align: left;
+    margin-left: 3vw;
+  }
+
+  @keyframes myfirst {
+    0% {
+      opacity: 0;
+      left: -100px;
+      top: 0vh;
+    }
+    100% {
+      opacity: 1;
+      left: 0vw;
+      top: 0vh;
+    }
+  }
+  .section3Content h1 {
+    position: relative;
+    animation-direction: linear;
+    animation: myfirst 2s;
+    font-size: 3vw;
+    width: 35vw;
+  }
+  .section3Container p {
+    font-size: 2vw;
+  }
+  .section3part1 {
+    order: 2;
+    margin-top: 10vh;
+  }
+  .bootButton {
+    background-color: #3838ff !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-size: 2vw !important;
+    width: 20vw;
+    height: 3vh;
+  }
+
+  .bootButton:hover {
+    background-color: transparent !important;
+    color: white !important;
+    border: 1px solid white !important;
+  }
+  .section3image {
+    height: 50%;
+    width: 50vw;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .root {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: auto;
+  }
+
+  .homeMainContiner {
+    background-color: black;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .rootDull {
+    background-color: black;
+    color: white;
+    text-align: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+
+  .backgroundVideo {
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .content {
+    position: absolute;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    height: 60vh;
+    width: 100vw;
+  }
+
+  .section2Container {
+    display: flex;
+    width: 100vw;
+    background-size: cover;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 20vh;
+    margin-top: 5vh;
+  }
+  .section2Container h1 {
+    font-size: 3vw;
+  }
+
+  .sliderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    margin-bottom: 6vh;
+  }
+
+  .slider {
+    width: 93vw;
+    display: flex;
+    height: auto;
+  }
+
+  .categoryHeading {
+    text-align: left;
+    padding-left: 2vw;
+    font-size: 2vw;
+    background-color: black;
+  }
+
+  .sliderItem {
+    width: 30vw;
+    height: 25vw;
+    text-align: center;
+  }
+
+  .image {
+    height: 20vw;
+    width: 20vw;
+    transition: width, height 2ms;
+    margin-left: 1vw;
+    border-radius: 2vw;
+    border: none;
+    margin: 2vw;
+    box-shadow: 0px 0px 19px 2px #474747;
+  }
+
+  .image:hover {
+    /* height: 22vw; */
+    position: relative;
+    width: 22vw;
+    box-shadow: 0px 0px 9px 1px #ffffff;
+  }
+
+  .categoryHeading {
+    font-style: italic;
+  }
+
+  .paraContainer {
+    color: white;
+    /* position: absolute; */
+    bottom: 0;
+    width: auto;
+    margin-left: 2.2vw;
+  }
+  .paraContainer p {
+    position: relative;
+    bottom: 0;
+    font-size: 3vw;
+  }
+  .section3Container {
+    display: flex;
+    justify-content: space-between;
+    /* background-image: url("https://res.cloudinary.com/dcqzidejd/image/upload/c_scale,w_793/v1666239838/automobilewebsite/car_background_t3mson.jpg"); */
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0px 0px 8px 1px black;
+  }
+  .section3Content {
+    display: flex;
+    width: 40vw;
+    margin-top: 10vh;
+    text-align: left;
+    margin-left: 3vw;
+  }
+
+  @keyframes myfirst {
+    0% {
+      opacity: 0;
+      left: -100px;
+      top: 0vh;
+    }
+    100% {
+      opacity: 1;
+      left: 0vw;
+      top: 0vh;
+    }
+  }
+  .section3Content h1 {
+    position: relative;
+    animation-direction: linear;
+    animation: myfirst 2s;
+    width: 35vw;
+    font-size: 4vw;
+  }
+  .section3Container p {
+    font-size: 3vw;
+  }
+  .section3part1 {
+    order: 2;
+    margin-top: 10vh;
+  }
+  .bootButton {
+    background-color: #3838ff !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-size: 3vw !important;
+    width: 25vw;
+    height: 4vh;
+  }
+
+  .bootButton:hover {
+    background-color: transparent !important;
+    color: white !important;
+    border: 1px solid white !important;
+  }
+  .section3image {
+    height: 50%;
+    width: 50vw;
+    order: 1;
+  }
+}

@@ -1,0 +1,16 @@
+.contactUsMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: radial-gradient(#1d4650, #03141a);
+}
+.contactUsSection1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+  width: 100vw;
+  height: 90vh;
+  color: white;
+}

@@ -1,0 +1,55 @@
+@media screen and (max-width: 400px) {
+  .shopMainContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #292525;
+    color: white;
+  }
+  .shopContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    width: 80vw;
+    height: auto;
+  }
+  .engineContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .partPic {
+    height: 25vw;
+    width: 25vw;
+    padding: 1vw;
+    border-radius: 10px;
+  }
+  .partPara {
+    padding: 5vw;
+    font-size: 4vw;
+    order: 1;
+  }
+}
+
+.shopMainContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #292525;
+  color: white;
+}
+.shopContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  width: 80vw;
+  height: auto;
+}
+.engineContainer {
+  display: flex;
+}
+.partPic {
+  height: 25vw;
+  width: 25vw;
+  padding: 1vw;
+}
+.partPara {
+  padding: 5vw;
+}

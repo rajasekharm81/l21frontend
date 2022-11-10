@@ -1,0 +1,131 @@
+@media screen and (min-width: 450px) {
+  .loginPageBg {
+    background-image: url("https://res.cloudinary.com/dcqzidejd/image/upload/v1666620688/automobilewebsite/login-background_c8drye.png");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    /* border: 1px solid white; */
+    height: auto;
+    width: 400px;
+    padding-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 32px 9px #00bdf7;
+    background-color: #cacaca00;
+    backdrop-filter: blur(8px);
+    color: #eeebeb;
+  }
+  .loginError {
+    box-shadow: 0px 0px 32px 9px #f70000;
+  }
+  .loginContainer div {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .loginContainer div .userInput {
+    background-color: transparent;
+    color: #eeebeb;
+    width: 80%;
+  }
+  .showPassInput {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  .loginContainer div .userInput:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .LoginButton {
+    background-color: #0091e6 !important;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  .LoginButton:hover {
+    background-color: #016caa !important;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+  .err {
+    box-shadow: 0px 0px 2px 1px red;
+    border: 1px solid red;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .loginPageBg {
+    background-image: url("https://res.cloudinary.com/dcqzidejd/image/upload/v1666620688/automobilewebsite/login-background_c8drye.png");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    /* border: 1px solid white; */
+    height: 80vh;
+    width: 80vw;
+    padding-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 5px #242222;
+    background-color: #cacaca00;
+    backdrop-filter: blur(8px);
+    color: #eeebeb;
+  }
+  .loginContainer div {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .loginContainer div .userInput {
+    background-color: transparent;
+    color: #eeebeb;
+    width: 80%;
+  }
+  .showPassInput {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  .showPassInput:checked {
+    outline: none;
+    box-shadow: none;
+    background-color: #2e9cf5;
+  }
+  .loginContainer div .userInput:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .LoginButton {
+    background-color: #0091e6 !important;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  .LoginButton:hover {
+    background-color: #016caa !important;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+  .err {
+    box-shadow: 0px 0px 2px 1px red;
+    border: 1px solid red;
+  }
+}
