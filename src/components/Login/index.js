@@ -69,10 +69,13 @@ class Login extends Component {
     }
     if (username !== "" && password !== "") {
       try {
-        response = await axios.post("http://localhost:3030/adminPanel/login", {
-          username: username,
-          password: password,
-        });
+        response = await axios.post(
+          "https://l21back.herokuapp.com/adminPanel/login",
+          {
+            username: username,
+            password: password,
+          }
+        );
         if (response.statusText) {
           Cookies.set("jwtToken", response.data, { expires: 30 });
           this.setState({ isLoggedin: true });
