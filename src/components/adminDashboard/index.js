@@ -17,7 +17,9 @@ class AdminDashboard extends Component {
 
   getData = async () => {
     try {
-      const response = await axios.get("http://localhost:3030/getQuotes");
+      const response = await axios.get(
+        `${process.env.REACT_APP_API_URL}/getQuotes`
+      );
       this.setState({ data: response.data });
     } catch (e) {
       alert("Network err");
@@ -58,7 +60,7 @@ class AdminDashboard extends Component {
       const id = event.target.id.split(" ")[1];
       if (id !== undefined) {
         this.setState({ dummy: " " }, this.updateDeleted(id));
-        await axios.delete(`http://localhost:3030/deleteItem/${id}`);
+        await axios.delete(`${process.env.REACT_APP_API_URL}/deleteItem/${id}`);
       } else {
         console.log(`failed due to`);
       }
@@ -71,7 +73,7 @@ class AdminDashboard extends Component {
     const id = event.target.id.split(" ")[1];
     const status = event.target.checked;
     this.setState({ dummy: "" }, this.updateIsChecked(id, status));
-    await axios.put("http://localhost:3030/updateChecked", {
+    await axios.put(`${process.env.REACT_APP_API_URL}/updateChecked`, {
       id: event.target.id,
       status: event.target.checked,
     });

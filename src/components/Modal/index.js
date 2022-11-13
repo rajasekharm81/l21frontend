@@ -113,7 +113,7 @@ class Modal extends Component {
       this.setState({ error: true });
     } else {
       try {
-        sendQ = await axios.post("http://localhost:3030/SendQuery", {
+        sendQ = await axios.post(`${process.env.REACT_APP_API_URL}/SendQuery`, {
           name: Name,
           city: City,
           email: Email,

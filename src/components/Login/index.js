@@ -70,7 +70,7 @@ class Login extends Component {
     if (username !== "" && password !== "") {
       try {
         response = await axios.post(
-          "https://l21back.herokuapp.com/adminPanel/login",
+          `${process.env.REACT_APP_API_URL}/adminPanel/login`,
           {
             username: username,
             password: password,
