@@ -661,7 +661,7 @@ class Modal extends Component {
           </button>
           <div className="form-heading-Container">
             <h3>Used Engines & Transmissions</h3>
-            <p>Free Shipping With Any Quote!</p>
+            {/* <p>Free Shipping With Any Quote!</p> */}
           </div>
           <form className="registrationForm">
             <div className="inputContainer">

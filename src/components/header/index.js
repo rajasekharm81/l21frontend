@@ -32,6 +32,11 @@ class Header extends Component {
                 Shop
               </button>
             </Link>
+            <Link className="link" to="/Payment">
+              <button id="Shop" type="button" className="navitem">
+                Payments
+              </button>
+            </Link>
             <Link className="link" to="/contactUs">
               <button type="button" className="navitem">
                 Contact Us
@@ -59,6 +64,9 @@ class Header extends Component {
               </Link>
               <Link className="link" to="/Shop">
                 <li>Shop</li>
+              </Link>
+              <Link className="link" to="/Payments">
+                <li>Payments</li>
               </Link>
               <Link className="link" to="/contactUs">
                 <li>Contact us</li>
