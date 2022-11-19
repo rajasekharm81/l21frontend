@@ -5,8 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../header";
 
 
-import validator from "validator";
-import axios from "axios";
+// import validator from "validator";
+// import axios from "axios";
 import "./payments.css";
 class Payment extends Component {
  render(){
