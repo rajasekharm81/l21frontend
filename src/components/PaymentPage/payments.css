@@ -1,47 +1,21 @@
-.paymentsMainContainer{
-    height: 100vh;
-    background: #141414;
-    color: white;
-    position: relative;
-}
-.PaymentsformContainer{
-    width: 45vw;
-    height: 80vh;
-    background: #141414;
-    margin: auto;
-    border: 1px solid white;
-    position: absolute;
-    top: 15vh;
-    left: 30vw;
-    overflow: auto;
-    padding:1vw ;
-    
-}
-.formHeadContainer{
+.paymentsMainContainer {
     display: flex;
-    
-}
-.designhr{
-    width: 5vw;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("https://res.cloudinary.com/dcqzidejd/image/upload/v1666936680/automobilewebsite/c837a6_1de0dc08580146f1be58deaa669fa8d3_mv2_o2nspg.webp");
+    background-size: cover;
 
 }
-.paymentDetailsContainer{
-    margin: 2vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.PaymentInputContainer{
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-}
-.PaymentInputContainer input{
-    margin: .25vw 0 .5vw 0   ;
-}
-.paymentExpDate{
-    display: flex;
-}
-.paymentExpDate input{
-    width: 80px;
+
+.formContainer {
+    position: absolute;
+    top: 11vh;
+    height: 80vh;
+    padding: 2vw;
+    width: 40vw;
+    background-color: white;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 10px 0px #dcdcff;
+    overflow: auto;
 }

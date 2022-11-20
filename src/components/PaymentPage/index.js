@@ -1,83 +1,119 @@
 import { Component } from "react";
-// import ReactModal from "react-modal";
-// import { AiOutlineClose } from "react-icons/ai";
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import IconButton from "@mui/material/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../header";
-
+import { BsCreditCard2BackFill, BsCreditCard2Front } from "react-icons/bs"
 
 // import validator from "validator";
 // import axios from "axios";
 import "./payments.css";
 class Payment extends Component {
- render(){
-  return(
-    <div className="paymentsMainContainer">
-      <Header/>
-        <form className="PaymentsformContainer">
-          <div className="formHeadContainer">
-            <hr className="designhr"/>
-            <p>Authorization for Charge to Credit Card I, the undersigned, authorize Bestused Autoparts, to use my credit card for the below purchase, and Bestused Autoparts,
-ANY PURCHASE OVER $500 WE WILL REQUIRE A COPY OF CREDIT CARD AND DRIVERS LICENSE.</p>
+  changed = (event) => {
+    console.log("changed", event.target.value)
+  }
+  render() {
+    return (
+      <div className="paymentsMainContainer">
+        <Header />
+        <Box className="formContainer"
+          component="form"
+          sx={{
+            '& .MuiTextField-root': { m: 1, width: '25ch' },
+          }}
+          noValidate
+          autoComplete="off"
+        >
+          <div>
+            <TextField
+              required
+              id="cardnum"
+              label="Card Number"
+              className="input"
+              type="number"
+            />
+            <TextField
+              required
+              id="cardName"
+              label="Name on Card"
+              className="input"
+            />
+            <TextField
+              required
+              id="cvv"
+              label="CVV"
+              className="input"
+              type="number"
+            />
+            <TextField
+              required
+              id="Month"
+              label="Exp Month"
+              className="input"
+              type="number"
+              style={{ width: "100px", margin: "10px 0px 0px 10px" }}
+            />
+            <TextField
+              required
+              id="year"
+              label="Exp Year"
+              className="input"
+              type="number"
+              style={{ width: "100px", margin: "10px 0px 0px 0px" }}
+            />
+            <TextField
+              required
+              id="ctype"
+              label="Card Type"
+              className="input"
+              type="text"
+            />
+            <TextField
+              required
+              id="Name"
+              label="Name"
+              className="input"
+              type="text"
+            /><TextField
+              required
+              id="BillAdd"
+              label="Billing Address"
+              className="input"
+              type="text"
+            /><TextField
+              required
+              id="sAdd"
+              label="Shipping Address"
+              className="input"
+              type="text"
+            /><TextField
+              required
+              id="email"
+              label="Email Id"
+              className="input"
+              type="email"
+            />
+            <TextField
+              required
+              id="ContactNo"
+              label="Contact No"
+              className="input"
+              type="number"
+            />
+            <IconButton color="primary" aria-label="upload picture" component="label">
+              <input onChange={this.crChanged} hidden accept="image/*" type="file" />
+              <BsCreditCard2BackFill style={{ fontSize: "3vw", marginRight: "10px" }} />Upload Credit card
+            </IconButton>
+            <IconButton color="primary" aria-label="upload picture" component="label">
+              <input onChange={this.DlChanged} hidden accept="image/*" type="file" />
+              <BsCreditCard2Front style={{ fontSize: "3vw", marginRight: "10px" }} />Upload Driving Licence
+            </IconButton>
           </div>
-          <p>Please fill the Form to Accept the Warranty.</p>
-          <div className="paymentDetailsContainer">
-            <div className="PaymentInputContainer">
-              <label htmlFor="CardNumber">Card Number *</label>
-              <input id='CardNumber' type="number" placeholder="Card Number"/>
-            </div>
-            <div className="PaymentInputContainer">
-              <label htmlFor="CardName">Name on the Card *</label>
-              <input id='CardName' type="text" placeholder="Name on the Card"/>
-            </div>
-            <div className="PaymentInputContainer">
-              <label htmlFor="Cvv">CVV Number *</label>
-              <input id='Cvv' type="number" placeholder="CVV"/>
-            </div>
-            <div className="PaymentInputContainer">
-              <label htmlFor="CardName">Expiry Date *</label>
-              <div className="paymentExpDate">
-              <input type="number" placeholder="Month"/>
-              <input type="number" placeholder="Year"/>
-              </div>
-            </div>
-            <div className="PaymentInputContainer">
-              <label htmlFor="CardName">Card Type *</label>
-              <input id='CardType' type="text" placeholder="Card Type"/>
-            </div>
-            <div className="PaymentInputContainer">
-              <label htmlFor="Name">Your Name *</label>
-              <input id='Name' type="text" placeholder="Your Name"/>
-            </div>
-            <div className="PaymentInputContainer">
-              <label htmlFor="billingAdd">Biling Address *</label>
-              <input id='billingAdd' type="text" placeholder="billing Address"/>
-            </div>
-            <div className="PaymentInputContainer">
-              <label htmlFor="shipAdd">Shipping Address *</label>
-              <input id='shipAdd' type="text" placeholder="Shipping Address"/>
-            </div>
-            <div className="PaymentInputContainer">
-              <label htmlFor="email">Email Id *</label>
-              <input id='email' type="email" placeholder="Email"/>
-            </div>
-            <div className="PaymentInputContainer">
-              <label htmlFor="phno">Contact Number *</label>
-              <input id='phno' type="number" placeholder="Contact Number"/>
-            </div>
-            <div className="PaymentInputContainer">
-              <label htmlFor="dr">Driving License Image*</label>
-              <input id='dr' type="file" placeholder="Driving License"/>
-            </div>
-            <div className="PaymentInputContainer">
-              <label htmlFor="cc">Credit Card Image*</label>
-              <input id='cc' type="file" placeholder="Credit Card"/>
-            </div>
-          </div>
-        </form>
-
+        </Box>
       </div>
-  )
- }
+    )
+  }
 }
 
 export default Payment;
