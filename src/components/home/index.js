@@ -84,7 +84,7 @@ class Home extends Component {
               alt="car"
               className="section3image"
             />
-          </div>
+          </div>  
         </section>
       </>
     );
@@ -132,7 +132,7 @@ class Home extends Component {
           </div>
         </div>
         <div className="section3Container">{section3Content}</div>
-      </div>
+        </div>
     );
   }
 }

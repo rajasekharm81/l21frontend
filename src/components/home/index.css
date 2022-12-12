@@ -119,6 +119,7 @@
     margin-top: 20vh;
     text-align: right;
     margin-left: 5vw;
+
   }
   .section3Content h1 {
     position: relative;
@@ -164,7 +165,6 @@
     display: none;
   }
 }
-
 @media screen and (min-width: 400px) and (max-width: 799px) {
   .root {
     background-color: black;

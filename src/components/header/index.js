@@ -65,7 +65,7 @@ class Header extends Component {
               <Link className="link" to="/Shop">
                 <li>Shop</li>
               </Link>
-              <Link className="link" to="/Payments">
+              <Link className="link" to="/Payment">
                 <li>Payments</li>
               </Link>
               <Link className="link" to="/contactUs">

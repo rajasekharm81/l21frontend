@@ -1,3 +1,29 @@
+@media  screen and (max-width:400px) {
+.paymentsMainContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("https://res.cloudinary.com/dcqzidejd/image/upload/v1666936680/automobilewebsite/c837a6_1de0dc08580146f1be58deaa669fa8d3_mv2_o2nspg.webp");
+    background-size: cover;
+
+}
+
+.formContainer {
+    position: absolute;
+    top: 11vh;
+    height: 80vh;
+    padding: 2vw;
+    width: 80vw;
+    background-color: white;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 10px 0px #dcdcff;
+    overflow: auto;
+}
+}
+
+
+@media screen and (min-width:401px){
 .paymentsMainContainer {
     display: flex;
     align-items: center;
@@ -18,4 +44,5 @@
     border-radius: 1vw;
     box-shadow: 0px 0px 10px 0px #dcdcff;
     overflow: auto;
+}
 }

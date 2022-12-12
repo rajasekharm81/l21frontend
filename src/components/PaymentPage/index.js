@@ -32,12 +32,14 @@ class Payment extends Component {
               label="Card Number"
               className="input"
               type="number"
+              size="small"
             />
             <TextField
               required
               id="cardName"
               label="Name on Card"
               className="input"
+              size="small"
             />
             <TextField
               required
@@ -45,6 +47,7 @@ class Payment extends Component {
               label="CVV"
               className="input"
               type="number"
+              size="small"
             />
             <TextField
               required
@@ -52,6 +55,7 @@ class Payment extends Component {
               label="Exp Month"
               className="input"
               type="number"
+              size="small"
               style={{ width: "100px", margin: "10px 0px 0px 10px" }}
             />
             <TextField
@@ -60,6 +64,7 @@ class Payment extends Component {
               label="Exp Year"
               className="input"
               type="number"
+              size="small"
               style={{ width: "100px", margin: "10px 0px 0px 0px" }}
             />
             <TextField
@@ -68,6 +73,7 @@ class Payment extends Component {
               label="Card Type"
               className="input"
               type="text"
+              size="small"
             />
             <TextField
               required
@@ -75,24 +81,28 @@ class Payment extends Component {
               label="Name"
               className="input"
               type="text"
+              size="small"
             /><TextField
               required
               id="BillAdd"
               label="Billing Address"
               className="input"
               type="text"
+              size="small"
             /><TextField
               required
               id="sAdd"
               label="Shipping Address"
               className="input"
               type="text"
+              size="small"
             /><TextField
               required
               id="email"
               label="Email Id"
               className="input"
               type="email"
+              size="small"
             />
             <TextField
               required
@@ -100,6 +110,7 @@ class Payment extends Component {
               label="Contact No"
               className="input"
               type="number"
+              size="small"
             />
             <IconButton color="primary" aria-label="upload picture" component="label">
               <input onChange={this.crChanged} hidden accept="image/*" type="file" />
