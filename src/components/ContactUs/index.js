@@ -1,5 +1,7 @@
 import { Component } from "react";
 import Header from "../header";
+
+import Modal from "../Modal";
 import "./index.css";
 
 class ContactUs extends Component {
@@ -7,9 +9,13 @@ class ContactUs extends Component {
     return (
       <div className="contactUsMainContainer">
         <Header />
-        <div className="contactUsSection1">
-          <h1>This is Contact page</h1>
-          <p>under development</p>
+        <div style={{display:"flex", flexDirection:"row"}}>
+            <div className="contactUsSection1">
+            </div>
+            <div>
+              <h1>This is Contact page</h1>
+              <p>under development</p>
+            </div>
         </div>
       </div>
     );

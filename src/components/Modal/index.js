@@ -56,7 +56,7 @@ class Modal extends Component {
       }
     }
     if (element === "Phone") {
-      if (validator.isMobilePhone(event.target.value, ["en-IN"])) {
+      if (validator.isMobilePhone(event.target.value, ["en-US"])) {
         this.setState({ Phone: event.target.value, phoneErr: false });
       } else {
         this.setState({ phoneErr: true });
