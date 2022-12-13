@@ -1,26 +1,32 @@
 import { Component } from "react";
 import Header from "../header";
 import "./index.css";
+import howitworks from "../../assects/howitworks.jpeg"
+import wthapensnxt from "../../assects/wthapensnxt.jpeg"
+import Footer from "../footer"
 // import { AiOutlineCaretRight } from "react-icons/ai";
 class AboutUs extends Component {
   render() {
     return (
+      <>
       <div className="aboutUsMainContainer">
-        <Header />
-        <div className="aboutUsHeading">
+        <Header/>
+        {/* <div className="aboutUsHeading">
           <img
             className="aboutUsImage"
             src="https://res.cloudinary.com/dcqzidejd/image/upload/v1666949488/about_us_bhmmce.jpg"
             alt="about us"
           />
-        </div>
+        </div> */}
         <div className="contentContianer">
-          <h3>
-            Welcome to L21 Premium Autoparts, Used Engine and Used Transmission
+          <h1 style={{textAlign:"center",padding:"50px", width:"100vw", backgroundColor:"#F8F8F8" }}>About Us</h1>
+          <div style={{padding:"0vw 5vw 0 5vw"}}>
+          <h3 style={{textAlign:"justify"}}>
+            Welcome to LOIRE 21 Premium Autoparts, Used Engine and Used Transmission
             locating Service!
           </h3>
           <ul>
-            <li>
+            <li style={{textAlign:"justify"}}>
               One stop platform for new and used auto parts, Submit a request
               using our free used engine locator service and our nation wide
               network of dealers will contact you directly with pricing and
@@ -28,77 +34,81 @@ class AboutUs extends Component {
               for.
             </li>
           </ul>
-
-          <h2>How it works</h2>
-          <ul>
-            <li>
-              This site allows you to submit a request for a new or used engine,
-              transmission or any body part to a network of suppliers
-            </li>
-            <li>
-              The suppliers will contact you directly by email, phone or text
-              message with information and pricing.
-            </li>
-            <li>
-              The method of contact was determined by you when the request form
-              was filled out.
-            </li>
-            <li>We recommend always including your phone number.</li>
-            <li>
-              This request is only sent 1 time so you do not need to be asked to
-              have your email address removed.
-            </li>
+          <div style={{display:"flex"}}> 
+              <img src={howitworks}/>
+              <ul style={{margin:"20px 0 0 30px"}}>
+                <li style={{textAlign:"justify"}}>
+                  This site allows you to submit a request for a new or used engine,
+                  transmission or any body part to a network of suppliers
+                </li>
+                <li style={{textAlign:"justify"}}>
+                  The suppliers will contact you directly by email, phone or text
+                  message with information and pricing.
+                </li>
+                <li style={{textAlign:"justify"}}>
+                  The method of contact was determined by you when the request form
+                  was filled out.
+                </li>
+                <li style={{textAlign:"justify"}}>We recommend always including your phone number.</li>
+                <li style={{textAlign:"justify"}}>
+                  This request is only sent 1 time so you do not need to be asked to
+                  have your email address removed.
+                </li>
           </ul>
+          </div>
+          
 
           <h3>What happens next?</h3>
-          <ul>
-            <li>
-              After you submitted your request, dealers on our network will
-              begin emailing, texting or calling you with price quotes and
-              information. Each dealer is independently owned so the cost of
-              your part, shipping time, shipping cost and warranties will vary.
-              You may request to have the part delivered to you, your shop or
-              you can arrange your own pick up.
-            </li>
-            <li> For your protection</li>
-            <li>
-              Our dealers pay a subscription fee to be on our network. We
-              connect buyers and sellers in the marketplace. We strongly
-              recommend after you decide who to do business with, you only pay
-              by credit card or PayPal. Never send cash, check, wire transfer or
-              Western Union. You are under no obligation to purchase at any
-              time.
-            </li>
-            <li>
-              If you have any questions or concerns about our service please
-              email us at info@bestusedautoparts.com. Thank you for using our
-              service.
-            </li>
-          </ul>
+          <div style={{display:"flex"}}>
+                  <ul>
+                      <li style={{textAlign:"justify"}}>
+                        After you submitted your request, dealers on our network will
+                        begin emailing, texting or calling you with price quotes and
+                        information. Each dealer is independently owned so the cost of
+                        your part, shipping time, shipping cost and warranties will vary.
+                        You may request to have the part delivered to you, your shop or
+                        you can arrange your own pick up.
+                      </li>
+                      <li style={{textAlign:"justify"}}> For your protection</li>
+                      <li style={{textAlign:"justify"}}>
+                        Our dealers pay a subscription fee to be on our network. We
+                        connect buyers and sellers in the marketplace. We strongly
+                        recommend after you decide who to do business with, you only pay
+                        by credit card or PayPal. Never send cash, check, wire transfer or
+                        Western Union. You are under no obligation to purchase at any
+                        time.
+                      </li>
+                      <li style={{textAlign:"justify"}}>
+                        If you have any questions or concerns about our service please
+                        email us at info@bestusedautoparts.com. Thank you for using our
+                        service.
+                      </li>
+                  </ul>
+                  <img style={{width:"300px", height:"300px", marginLeft:"20px", borderRadius:"10px"}} src={wthapensnxt}/>
+
+
+            </div>
+          
         </div>
-        <section className="contentContianer">
+        <section style={{padding:"2vw 5vw 0 5vw"}}>
           <h2>
-            L21 Premium Autoparts
-            <span style={{ backgroundColor: "blue" }}>
-              {" "}
-              Warranty Information
-            </span>
+            L21 Premium Autoparts Warranty Information
           </h2>
           <hr />
           <ul>
-            <li>Warranties Are Not Transferable </li>
-            <li>To validate you must present original invoice</li>
-            <li>Copies are not acceptable</li>
+            <li style={{textAlign:"justify"}}>Warranties Are Not Transferable </li>
+            <li style={{textAlign:"justify"}}>To validate you must present original invoice</li>
+            <li style={{textAlign:"justify"}}>Copies are not acceptable</li>
           </ul>
           <h3>Limited Warranty</h3>
-          <p>
+          <p style={{textAlign:"justify"}}>
             Your recycled part from L21 Premium Autoparts is covered by this
             limited warranty unless specifically excluded in writing at the time
             of sale.
           </p>
           <h3>General</h3>
           <ul>
-            <li>
+            <li style={{textAlign:"justify"}}>
               This warranty applies only to the original purchaser of the part
               and only as long as the part is still installed in the vehicle for
               which it was originally purchased for 90 days, or for longer if an
@@ -125,7 +135,7 @@ class AboutUs extends Component {
               fluids, and similar supplies are specifically excluded from this
               warranty.
             </li>
-            <li>
+            <li style={{textAlign:"justify"}}>
               The Liability and obligation of the L21 Premium Autoparts under
               this warranty shall not include any inconvenience, transportation,
               towing, labor expense (unless a limited warranty is purchased),
@@ -141,7 +151,7 @@ class AboutUs extends Component {
           </ul>
           <h3>Engines</h3>
           <ul>
-            <li>
+            <li style={{textAlign:"justify"}}>
               The L21 Premium Autoparts warrants to the original purchaser the
               internal parts of its engines to be free of defects for a period
               of 90 days from the date of sale. The parts covered by this
@@ -160,7 +170,7 @@ class AboutUs extends Component {
           </ul>
           <h3>Transmissions</h3>
           <ul>
-            <li>
+            <li style={{textAlign:"justify"}}>
               The L21 Premium Autoparts warrants to the original purchaser its
               transmission to be free of defects for a period of 90 days from
               the date of sale. The parts covered by this warranty are the
@@ -173,7 +183,7 @@ class AboutUs extends Component {
           </ul>
           <h3>Refund Policy</h3>
           <ul>
-            <li>
+            <li style={{textAlign:"justify"}}>
               Refunds are paid by check. Refund checks will be made payable to
               the purchaser’s name on the invoice. If merchandise was purchased
               by check, please allow 10 working days for refund. Items not
@@ -188,7 +198,10 @@ class AboutUs extends Component {
             are not acceptable.
           </p>
         </section>
+        </div>
       </div>
+      <Footer/>
+      </>
     );
   }
 }

@@ -7,6 +7,7 @@ import Header from "../header";
 import videoBg from "../../assects/WhatsApp Video 2022-10-19 at 16.06.34.mp4";
 import Slider from "react-slick";
 import Modal from "../Modal";
+import Footer from "../footer"
 // import axios from "axios";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -132,6 +133,7 @@ class Home extends Component {
           </div>
         </div>
         <div className="section3Container">{section3Content}</div>
+        <Footer/>
         </div>
     );
   }

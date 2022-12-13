@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: radial-gradient(#aaaaaa, #8f8f8f);
+  background-color: white;
 }
 .aboutUsHeading {
   display: flex;
@@ -20,13 +20,18 @@
   width: 100vw;
 }
 .contentContianer {
-  background-color: black;
+  background-color: white;
   height: auto;
   width: 100vw;
-  color: white;
-  padding: 2vh 10vw 3vw 3vw;
+  color: black;
+  margin-top:12vh;
 }
 
 li {
   list-style: circle;
+  text-align:'justify';
+}
+
+p{
+  text-align:"justify";
 }

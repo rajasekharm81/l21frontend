@@ -5,6 +5,7 @@ import IconButton from "@mui/material/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../header";
 import { BsCreditCard2BackFill, BsCreditCard2Front } from "react-icons/bs"
+import Footer from "../footer"
 
 // import validator from "validator";
 // import axios from "axios";
@@ -15,6 +16,7 @@ class Payment extends Component {
   }
   render() {
     return (
+      <>
       <div className="paymentsMainContainer">
         <Header />
         <Box className="formContainer"
@@ -123,6 +125,8 @@ class Payment extends Component {
           </div>
         </Box>
       </div>
+      <Footer style={{position:"absolute", bottom:0}}/>
+      </>
     )
   }
 }

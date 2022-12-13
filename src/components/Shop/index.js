@@ -4,20 +4,20 @@ import engine1 from "../../assects/engine1.jpg";
 import tyres from "../../assects/tyres.jpg";
 import transmission from "../../assects/transmission.webp";
 import carAxle from "../../assects/carAxle.webp";
-
+import Footer from "../footer"
 import "./index.css";
 
 class Shop extends Component {
   render() {
     return (
+      <>
       <div className="shopMainContainer">
         <Header />
         <div className="shopContent">
           <h1
             style={{
               textAlign: "center",
-              fontWeight: "bolder",
-              textDecoration: "underline",
+              fontWeight: "bolder"
             }}
           >
             Shop now
@@ -29,7 +29,7 @@ class Shop extends Component {
                 src={engine1}
                 alt="engine&transmission"
               />
-              <h1>Engines</h1>
+              <h1 style={{ textAlign:"Center"}}>Engines</h1>
             </div>
 
             <p className="partPara">
@@ -66,14 +66,14 @@ class Shop extends Component {
               industry-leading warranty so you can shop with confidence.
             </p>
             <div>
-              <img className="partPic" src={tyres} alt="engine&transmission" />
-              <h1>Tyres</h1>
+              <img className="partPic"  src={tyres} alt="engine&transmission" />
+              <h1 style={{ textAlign:"Center"}}>Tyres</h1>
             </div>
           </div>
           <div className="engineContainer">
             <div>
               <img className="partPic" src={transmission} alt="engine" />
-              <h1>Transmissions</h1>
+              <h1 style={{ textAlign:"Center"}}>Transmissions</h1>
             </div>
             <p className="partPara">
               A car transmission is one of the most important components of a
@@ -101,11 +101,13 @@ class Shop extends Component {
             </p>
             <div>
               <img className="partPic" src={carAxle} alt="engine" />
-              <h1>Axle</h1>
+              <h1 style={{ textAlign:"Center"}}>Axle</h1>
             </div>
           </div>
         </div>
       </div>
+      <Footer/>
+      </>
     );
   }
 }
